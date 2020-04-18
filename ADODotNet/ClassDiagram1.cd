@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ADODotNet.DataProviderFactory">
+    <Position X="0.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>DataProviderFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADODotNet.DataProviders">
+    <Position X="4.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAEAAAAACAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>DataProviders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADODotNet.DbUtilities">
+    <Position X="0.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADODotNet.Program">
+    <Position X="3.75" Y="2.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAABABAIIA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
