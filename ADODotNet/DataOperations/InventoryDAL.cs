@@ -10,9 +10,9 @@ using System.Data.SqlClient;
 
 using static System.Environment;
 
-using AutoLotDAL.Models;
+using ADODotNet.Models;
 
-namespace AutoLotDAL.DataOperations
+namespace ADODotNet.DataOperations
 {
 
     #region Working with Create, Update, and Delete Queries

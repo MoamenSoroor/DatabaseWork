@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="ADODotNet.InventoryDAL">
+  <Class Name="InventoryDAL.DataOperations.InventoryDAL">
     <Position X="4.5" Y="0.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAARAAAAQAABAgAAAABgBAAAQAAAAAgAAAAAAAAAAA=</HashCode>
@@ -14,7 +14,7 @@
       <FileName>Models\Car.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ADODotNet.DbUtilities">
+  <Class Name="InventoryDAL.DbUtilities">
     <Position X="8.75" Y="0.5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>

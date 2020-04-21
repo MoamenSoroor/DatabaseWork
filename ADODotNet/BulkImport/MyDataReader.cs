@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 
 
-namespace AutoLotDAL.BulkImport
+namespace ADODotNet.BulkImport
 {
     public interface IMyDataReader<T> : IDataReader
     {

@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 
-namespace AutoLotDAL.BulkImport
+namespace ADODotNet.BulkImport
 {
     public static class ProcessBulkImport
     {

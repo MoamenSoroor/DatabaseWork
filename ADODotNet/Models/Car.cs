@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutoLotDAL.Models
+namespace ADODotNet.Models
 {
     public class Car
     {
