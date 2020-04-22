@@ -17,7 +17,7 @@ namespace AutoLotDAL.Models
         {
             //return base.ToString();
             return $"{this.PetName ?? "**No Name**"} is a {this.Color} " +
-                $"{this.Make} with ID { this.CarId}.";
+                $"{this.Make} with ID { this.Id}.";
         }
     }
 }

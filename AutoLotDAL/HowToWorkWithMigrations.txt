@@ -1,0 +1,34 @@
+﻿
+View ➤ Other Windows ➤ Package Manager Console
+select target program
+
+type the next stmt:
+
+ > enable-migrations
+ --------------------------
+ then Examine the Configuration.cs class generated
+
+
+ > Add-migration Initial
+ ------------------------
+ This creates an additional file in the Migrations 
+ folder named similar to 201707262033409_Initial.cs
+
+ > update-database
+ ------------------------
+ This creates the database and the tables, as well as the __MigrationHistory table. 
+ It adds a row for the migration just applied.
+MigrationId                 ContextKey                          Model               ProductVersion
+---------------------------------------------------------------------------------------------------
+201707262033409_Initial     AutoLotDAL.Migrations.Configuration 0x1F8B08000000...   6.1.3-40302
+
+
+ > Add-migration Final
+-----------------------
+This creates an additional file in the Migrations folder named 201707262025040_Final.cs.
+
+
+ > update-database
+  This creates the database and the tables, as well as the __MigrationHistory table. 
+ It adds a row for the migration just applied.
+

@@ -6,16 +6,16 @@ namespace AutoLotDAL.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
+    using AutoLotDAL.Models.Base;
+
     [Table("Inventory")]
-    public partial class Inventory
+    public partial class Inventory : EntityBase
     {
         public Inventory()
         {
             Orders = new HashSet<Order>();
         }
 
-        [Key, Column("CarId")]
-        public int CarId { get; set; }
 
         [StringLength(50), Column("Make")]
         public string Make { get; set; }

@@ -6,15 +6,18 @@ namespace AutoLotDAL.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class CreditRisk
+    using AutoLotDAL.Models.Base;
+
+    public partial class CreditRisk : EntityBase
     {
-        [Key]
-        public int CustID { get; set; }
 
         [StringLength(50)]
+        [Index("IDX_CreditRisk_Name", IsUnique = true, Order = 2)]
         public string FirstName { get; set; }
 
+
         [StringLength(50)]
+        [Index("IDX_CreditRisk_Name", IsUnique = true, Order = 1)]
         public string LastName { get; set; }
     }
 }

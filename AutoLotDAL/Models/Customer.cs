@@ -6,15 +6,15 @@ namespace AutoLotDAL.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Customer
+    using AutoLotDAL.Models.Base;
+
+
+    public partial class Customer : EntityBase
     {
         public Customer()
         {
             Orders = new HashSet<Order>();
         }
-
-        [Key]
-        public int CustID { get; set; }
 
         [StringLength(50)]
         public string FirstName { get; set; }

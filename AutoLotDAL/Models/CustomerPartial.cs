@@ -18,7 +18,7 @@ namespace AutoLotDAL.Models
         {
             //return base.ToString();
 
-            return $"Customer[ Id: {this.CustID}, FullName: {this.FullName} ]";
+            return $"Customer[ Id: {this.Id}, FullName: {this.FullName} ]";
         }
 
     }
