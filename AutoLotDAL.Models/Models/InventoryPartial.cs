@@ -16,8 +16,8 @@ namespace AutoLotDAL.Models
         public override string ToString()
         {
             //return base.ToString();
-            return $"{this.PetName ?? "**No Name**"} is a {this.Color} " +
-                $"{this.Make} with ID { this.Id}.";
+            return $"ID: { this.Id,-5} Name: {this.PetName ?? "*NULL*",-20} Color: {this.Color,-20} " +
+                $"Make: {this.Make,-30}";
         }
     }
 }

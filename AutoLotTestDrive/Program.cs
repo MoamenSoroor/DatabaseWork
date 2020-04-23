@@ -17,18 +17,24 @@ namespace AutoLotTestDrive
     {
         static void Main(string[] args)
         {
+
+            //GetAllInventory();
+
+            //TestConcurrency();
+
+            //GetAllInventory();
+
+            //AddNewRecord(new Inventory() { Color = "Green", Make = "Hondai", PetName = "My Greeny" });
+
+            //AddNewRecord(new Inventory() { Color = "Yellow", Make = "Toyota", PetName = "YellowTota" });
+
             GetAllInventory();
-
-            TestConcurrency();
-
-            GetAllInventory();
-
 
         }
 
         public static void GetAllInventory()
         {
-            Console.WriteLine("***** Using a Repository *****\n");
+            Console.WriteLine("---------------- Get All Inventory ---------------- ");
             using (var repo = new InventoryRepo())
             {
                 foreach (Inventory c in repo.GetAll())
@@ -36,6 +42,7 @@ namespace AutoLotTestDrive
                     Console.WriteLine(c);
                 }
             }
+            Console.WriteLine("".PadLeft(50,'-'));
         }
 
         public static void AddNewRecord(Inventory inventory)

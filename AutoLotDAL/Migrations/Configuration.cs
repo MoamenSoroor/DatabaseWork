@@ -6,9 +6,12 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
+
     using AutoLotDAL.Models;
+    using AutoLotDAL.EF;
     
-    internal sealed class Configuration : DbMigrationsConfiguration<AutoLotDAL.Models.AutoLotEntities>
+    
+    internal sealed class Configuration : DbMigrationsConfiguration<AutoLotEntities>
     {
         public Configuration()
         {
@@ -16,7 +19,7 @@
         }
 
         // Seeding the Database
-        protected override void Seed(AutoLotDAL.Models.AutoLotEntities context)
+        protected override void Seed(AutoLotEntities context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D768689-0E23-4B08-87C6-B94B86AD686D}</ProjectGuid>
+    <ProjectGuid>{E12CE9DA-76DB-4D70-A06A-7DCD290B4CFF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AutoLotDAL</RootNamespace>
-    <AssemblyName>AutoLotDAL</AssemblyName>
+    <RootNamespace>AutoLotDAL.Models</RootNamespace>
+    <AssemblyName>AutoLotDAL.Models</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -33,9 +33,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
@@ -46,7 +43,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,55 +51,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EF\AutoLotEntities.cs" />
-    <Compile Include="Interception\ConsoleWriterInterceptor.cs" />
-    <Compile Include="Migrations\202004230954351_FinalWithRadio.cs" />
-    <Compile Include="Migrations\202004230954351_FinalWithRadio.designer.cs">
-      <DependentUpon>202004230954351_FinalWithRadio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Repos\BaseRepo.cs" />
-    <Compile Include="Repos\CreditRisksRepo.cs" />
-    <Compile Include="Repos\CustomersRepo.cs" />
-    <Compile Include="Repos\RadioRepo.cs" />
-    <Compile Include="Repos\InventoryRepo.cs" />
-    <Compile Include="Repos\IRepo.cs" />
-    <Compile Include="EF\MyDataInitializer.cs" />
-    <Compile Include="Migrations\202004220919162_Initial.cs" />
-    <Compile Include="Migrations\202004220919162_Initial.designer.cs">
-      <DependentUpon>202004220919162_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202004220952538_Final.cs" />
-    <Compile Include="Migrations\202004220952538_Final.designer.cs">
-      <DependentUpon>202004220952538_Final.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Base\EntityBase.cs" />
+    <Compile Include="Models\CreditRisk.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerPartial.cs" />
+    <Compile Include="Models\Inventory.cs" />
+    <Compile Include="Models\InventoryPartial.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\RadioPartial.cs" />
+    <Compile Include="Models\Radio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repos\OrdersRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="AutoLotDAL.cd" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004220919162_Initial.resx">
-      <DependentUpon>202004220919162_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004220952538_Final.resx">
-      <DependentUpon>202004220952538_Final.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004230954351_FinalWithRadio.resx">
-      <DependentUpon>202004230954351_FinalWithRadio.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="HowToWorkWithMigrations.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AutoLotDAL.Models\AutoLotDAL.Models.csproj">
-      <Project>{e12ce9da-76db-4d70-a06a-7dcd290b4cff}</Project>
-      <Name>AutoLotDAL.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
